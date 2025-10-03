@@ -1,7 +1,7 @@
 
 // Simple placeholder rows with sample cards (can be wired to a JSON later)
 function card(t){
-  return `<article class="mural-card">
+  return `<article class="mural-card reveal">
     <img src="img/members/defaults/foto-25-138.jpg" alt="Foto do evento">
     <div class="content">
       <h4>${t}</h4>
