@@ -8,4 +8,11 @@ function revealTitleBanner(){
 }
 document.addEventListener('DOMContentLoaded', revealTitleBanner);
 
+document.addEventListener('DOMContentLoaded', ()=>{
+  const obs = new IntersectionObserver((ents)=>{
+    ents.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('is-in'); obs.unobserve(e.target); }});
+  }, {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=> obs.observe(el));
+});
+
 // NEWS render
