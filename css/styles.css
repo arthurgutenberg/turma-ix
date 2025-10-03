@@ -88,4 +88,34 @@ img{max-width:100%;display:block}
 .member-card.is-center{transform:scale(1.02); box-shadow:0 20px 40px rgba(0,0,0,.35)}
 #members-bg{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;padding:10px 0;opacity:.15}
 #members-bg .bg-name{font-weight:800;letter-spacing:.5px}
+/* --- MEMBERS 2.0 --- */
+.members-track{scroll-snap-type:x mandatory}
+.member-card{
+  scroll-snap-align:center; min-width:clamp(260px,40vw,360px);
+  background:var(--card); border-radius:18px; overflow:hidden;
+  box-shadow:var(--shadow); position:relative; transform:scale(.94);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.member-card.is-center{transform:scale(1.02); box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.member-card img.main{height:360px; object-fit:cover; width:100%}
+.member-card .overlay{position:absolute; top:12px; left:12px; background:rgba(0,0,0,.55);
+  padding:6px 12px; border-radius:999px; font-weight:700}
+.member-card .nickname{position:absolute; top:56px; left:12px; background:rgba(255,255,255,.15);
+  padding:4px 10px; border-radius:999px}
+.member-card .content{padding:12px 14px}
+.member-card .handle a{color:var(--accent); text-decoration:underline}
+
+/* thumbs “flutuantes” (opcional) */
+.member-card .thumb{
+  position:absolute; top:30%; width:80px; height:80px; object-fit:cover; border-radius:12px;
+  box-shadow:var(--shadow); opacity:.95; transform:rotate(-6deg);
+}
+.member-card .thumb.right{right:-16px; transform:rotate(6deg)}
+.member-card .thumb.left{left:-16px}
+
+/* BG com nomes + brilho no ativo */
+#members-bg{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;padding:10px 0;opacity:.15}
+#members-bg .bg-name{font-weight:800;letter-spacing:.5px}
+#members-bg .glow{color:#fff; text-shadow:0 0 12px rgba(255,255,255,.6)}
+
 #members-bg .glow{color:#fff; text-shadow:0 0 12px rgba(255,255,255,.6)}
