@@ -119,3 +119,7 @@ img{max-width:100%;display:block}
 #members-bg .glow{color:#fff; text-shadow:0 0 12px rgba(255,255,255,.6)}
 
 #members-bg .glow{color:#fff; text-shadow:0 0 12px rgba(255,255,255,.6)}
+
+.reveal{opacity:0; transform:translateY(8px); transition:opacity .4s ease, transform .4s ease}
+.reveal.is-in{opacity:1; transform:none}
+
