@@ -57,3 +57,5 @@ document.addEventListener('DOMContentLoaded', async ()=>{
     console.error(e);
   }
 });
+
+<script src="js/members.js" defer></script>
