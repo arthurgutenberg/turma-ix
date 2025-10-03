@@ -9,7 +9,7 @@ async function renderNews(){
     grid.innerHTML = '';
     items.forEach((n, i)=>{
       const card = document.createElement('article');
-      card.className = 'card ' + (i===0 ? 'featured' : '');
+      card.className = 'card reveal' + (i===0 ? 'featured' : '');
       card.innerHTML = `
         <img src="${n.cover}" alt="Capa da notícia">
         <div class="content">
