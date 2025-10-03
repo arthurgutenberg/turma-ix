@@ -82,3 +82,10 @@ img{max-width:100%;display:block}
 .mural-card{scroll-snap-align:center;min-width:clamp(260px, 40vw, 520px);background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-rows:auto auto}
 .mural-card img{height:240px;object-fit:cover;width:100%}
 .mural-card .content{padding:12px 14px}
+/* Membros — ênfase no card central e nomes de fundo */
+.members-track{scroll-snap-type:x mandatory}
+.member-card{scroll-snap-align:center;transform:scale(.94);transition:transform .2s ease, box-shadow .2s ease}
+.member-card.is-center{transform:scale(1.02); box-shadow:0 20px 40px rgba(0,0,0,.35)}
+#members-bg{display:flex;justify-content:center;flex-wrap:wrap;gap:24px;padding:10px 0;opacity:.15}
+#members-bg .bg-name{font-weight:800;letter-spacing:.5px}
+#members-bg .glow{color:#fff; text-shadow:0 0 12px rgba(255,255,255,.6)}
